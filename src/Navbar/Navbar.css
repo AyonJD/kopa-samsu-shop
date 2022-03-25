@@ -8,6 +8,7 @@
   padding: 0 100px;
   top: 0;
   z-index: 1;
+  width: 100% !important;
 }
 
 .navbar h1 {
@@ -35,4 +36,42 @@
   background: rgba(179, 0, 0, 0.493);
   padding: 5px;
   color: white;
+}
+.cross{
+  margin-left: 85%;
+  margin-bottom: 8%;
+  margin-top: 8%;
+  cursor: pointer;
+}
+.cart-warning{
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+}
+.modal-details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.image img{
+  width: 130px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 748px){
+  .navbar h1{
+    font-size: 25px;
+  }
+  .navbar{
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 460px){
+  .navbar h1{
+    font-size: 20px;
+  }
+  /* .navbar{
+    padding: 0 10px;
+    min-width: 100%;
+  } */
 }

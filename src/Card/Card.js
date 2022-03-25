@@ -17,7 +17,7 @@ const Card = props => {
         <p>Action : {action}</p>
       </div>
       <div className='add-to-cart'>
-        <button onClick={props.handleAdToCart}>
+        <button onClick={() => props.handleAdToCart(props.gun)}>
           <BsFillCartPlusFill className='icon' />
         </button>
         <h1>$ {price}</h1>

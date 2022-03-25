@@ -1,18 +1,20 @@
-import React from 'react';
+import { useState } from 'react';
 import './App.css'
 import Navbar from './Navbar/Navbar';
 import Shop from './Shop/Shop';
 
-const handleAdToCart = () => {
-  console.log('clicked');
-}
 const App = () => {
+  const [gunArr, setGunArr] = useState([])
+  const handleAdToCart = props => {
+    const newGunArr = [...gunArr, props]
+    setGunArr(newGunArr)
+  }
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar gunArr = {gunArr}></Navbar>
       <Shop handleAdToCart = {handleAdToCart}></Shop>
     </div>
   );
 };
 
-export {App, handleAdToCart};
+export default App;
